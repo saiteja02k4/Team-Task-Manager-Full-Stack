@@ -3,6 +3,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from tasks.views import TaskViewSet, dashboard
 from projects.views import ProjectViewSet
+
 from .views import home
 
 from rest_framework_simplejwt.views import (
@@ -11,9 +12,9 @@ from rest_framework_simplejwt.views import (
 )
 
 # 🔥 ADD HERE
-admin.site.site_header = "Smart Invitation Admin"
-admin.site.site_title = "Smart Invitation"
-admin.site.index_title = "Welcome to Smart Invitation Dashboard"
+admin.site.site_header = "Team Task Manager  | Sai Teja"
+admin.site.site_title = "Sai Teja Project"
+admin.site.index_title = "Built by Sai Teja"
 
 router = DefaultRouter()
 router.register(r'tasks', TaskViewSet, basename='tasks')
@@ -29,4 +30,10 @@ urlpatterns = [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
+
+from django.contrib import admin
+
+admin.site.site_header = "Team Task Manager by Sai Teja"
+admin.site.site_title = "Sai Teja - Task Manager"
+admin.site.index_title = "Developed by Sai Teja"
 

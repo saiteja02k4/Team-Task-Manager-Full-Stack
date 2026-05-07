@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-admin.site.site_header = "Smart Invitation Distributor Admin"
-admin.site.site_title = "Smart Invitation Distributor"
-admin.site.index_title = "Welcome to Smart Invitation Distributor Dashboard"
+admin.site.site_header = "Team Task Manager Admin"
+admin.site.site_title = "Team Task Manager"
+admin.site.index_title = "Welcome to Team Task Manager Dashboard"

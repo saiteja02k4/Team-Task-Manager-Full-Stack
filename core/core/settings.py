@@ -125,3 +125,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
+# Django Admin Customization
+ADMIN_SITE_HEADER = "Team Task Manager"
+ADMIN_SITE_TITLE = "Team Task Manager"
+ADMIN_INDEX_TITLE = "Team Task Manager Dashboard"
