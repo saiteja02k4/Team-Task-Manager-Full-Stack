@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from tasks.views import TaskViewSet, dashboard
-from projects.views import ProjectViewSet
+from staticfiles.projects.views import ProjectViewSet
 
 from .views import home
 
