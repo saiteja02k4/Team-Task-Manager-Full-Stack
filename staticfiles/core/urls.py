@@ -37,3 +37,16 @@ admin.site.site_header = "Team Task Manager by Sai Teja"
 admin.site.site_title = "Sai Teja - Task Manager"
 admin.site.index_title = "Developed by Sai Teja"
 
+from django.http import HttpResponse
+from django.contrib import admin
+from django.urls import path, include
+
+def home(request):
+    return HttpResponse("🚀 Team Task Manager is running!")
+
+urlpatterns = [
+    path('', home),
+    path('admin/', admin.site.urls),
+    path('api/', include('tasks.urls')),  # if exists
+]
+
